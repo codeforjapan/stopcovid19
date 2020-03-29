@@ -1,5 +1,5 @@
 {
-  "avatar": "Informarion",
+  "avatar": "StopCovid19jp",
   "buttons": "Buttons",
   "calendar": "Calendar",
   "charts": "Charts",
@@ -7,5 +7,6 @@
   "dashboard": "Dashboard",
   "area-maps": "Area Maps",
   "area-tables": "Area Tables",
-  "about": "..about"
+  "about": "About",
+  "information": "Infomation"
 }

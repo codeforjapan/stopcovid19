@@ -23,7 +23,13 @@ export default new Router({
           path: 'tables/area-tables',
           component: () => import('@/views/dashboard/tables/AreaTables'),
         },
-        // Dashboard
+        // information
+        {
+          name: '関連情報',
+          path: 'information',
+          component: () => import('@/views/dashboard/information/Information'),
+        },
+        // About
         {
           name: '当サイトについて',
           path: 'about',

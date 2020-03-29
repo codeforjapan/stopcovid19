@@ -42,4 +42,6 @@ You can also run additional npm tasks such as
 The documentation for the **Vuetify Material Dashboard** is hosted on vuetify [website](https://vuetifyjs.com/en/components/api-explorer).
 
 ## Licensing
-* Creative Tim [license](https://www.creative-tim.com/license)
+* Copyright 2018 Creative Tim [license](https://www.creative-tim.com/license)
+* [Vuetify Material Dashboard](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=vtymdp-readme)
+* ソースコードはMITライセンスです。

@@ -121,6 +121,11 @@
         },
         {
           icon: 'mdi-view-dashboard',
+          title: 'information',
+          to: '/information',
+        },
+        {
+          icon: 'mdi-view-dashboard',
           title: 'about',
           to: '/about',
         },

@@ -57,7 +57,7 @@
         // MAP読み込み
         const map = L.map('map', {
           center: [35.981, 139.543],
-          zoom: 5,
+          zoom: 4,
           zoomControl: true,
           layers: [layerOsm],
         })
