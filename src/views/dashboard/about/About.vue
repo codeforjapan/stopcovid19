@@ -9,20 +9,35 @@
         <v-card>
           <v-card-text>
             <base-subheading subheading="当サイトについて" />
-            東京都 新型コロナウイルス感染症対策サイトのソースコードから、全国の自治体の新型コロナウイルス感染症対策サイトが派生されています。
-            当サイトは各都道府県のサイトについてまとめたものです。
+            東京都の<a href="https://github.com/tokyo-metropolitan-gov/covid19">オープンソース</a>を活用した新型コロナウイルス感染症対策サイトの各都道府県のサイトをまとめています。
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col cols="12">
+      <v-col cols="6">
         <v-card>
           <v-card-text>
             <base-subheading subheading="リンク集" />
-            <ul id="link-1">
-              <li v-for="item in items" :key="item.id">
+            <ul id="link-1-1">
+              <li v-for="item in area_items" :key="item.id">
+                <a
+                  :href="item.url"
+                  target="_blank"
+                >{{ item.name }}</a>
+              </li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="6">
+        <v-card>
+          <v-card-text>
+            <base-subheading subheading="東京都新型コロナウイルス対策サイト 関連サイト" />
+            <ul id="link-1-2">
+              <li v-for="item in tokyo_items" :key="item.id">
                 <a
                   :href="item.url"
                   target="_blank"
@@ -59,11 +74,13 @@
   export default {
     name: 'About',
     data: () => ({
-      items: [
-        { id: 1, name: '自治体実施状況とりまとめ（政府外サイト、自治体非公式サイトを含む）', url: 'https://hackmd.io/@homata/ryHz3P4BI' },
+      area_items: [
+        { id: 1, name: 'StopCovid19全国版まとめ(HackMD)', url: 'https://hackmd.io/@homata/ryHz3P4BI' },
         { id: 2, name: 'Googleスプレッドシートのまとめ', url: 'https://docs.google.com/spreadsheets/d/1c50h3YtbsCiHiKOh4cyJQYL-21Vow3X7b8tRoAceVMA/' },
-        { id: 3, name: '東京都新型コロナウイルス対策サイト', url: 'https://stopcovid19.metro.tokyo.lg.jp/' },
-        { id: 4, name: '東京都新型コロナウイルス対策サイトリ GitHubソースコード', url: 'https://github.com/tokyo-metropolitan-gov/covid19' },
+      ],
+      tokyo_items: [
+        { id: 1, name: '東京都新型コロナウイルス対策サイト', url: 'https://stopcovid19.metro.tokyo.lg.jp/' },
+        { id: 2, name: '東京都新型コロナウイルス対策サイト ソースコード (GitHub)', url: 'https://github.com/tokyo-metropolitan-gov/covid19' },
       ],
     }),
   }

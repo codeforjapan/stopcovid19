@@ -33,10 +33,9 @@
       TablePane,
     },
     data: () => ({
-      news_title: 'StopCovid19 全国版の地域一覧',
-      news_note: '東京都 新型コロナウイルス感染症対策サイトの<a href="https://github.com/tokyo-metropolitan-gov/covid19">オープンソースコード</a>を活用した、' +
-        '新型コロナウイルス感染症対策サイトが派生されています。<br>' +
-        '各都道府県のサイトを表でまとめています。',
+      news_title: 'StopCovid19 全国版の地域詳細一覧',
+      news_note: '東京都の<a href="https://github.com/tokyo-metropolitan-gov/covid19">オープンソース</a>' +
+        'を活用した新型コロナウイルス感染症対策サイトの各都道府県のサイトをまとめています。',
     }),
   }
 </script>

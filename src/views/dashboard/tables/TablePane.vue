@@ -38,12 +38,6 @@
     data: () => ({
       areas: DATA,
       headers: [
-        {
-          text: '都道府県コード',
-          align: 'start',
-          sortable: false,
-          value: 'code',
-        },
         { text: '状態', sortable: true, value: 'status' },
         { text: '都道府県', sortable: true, value: 'prefecture' },
         { text: '市区町村', sortable: true, value: 'city' },

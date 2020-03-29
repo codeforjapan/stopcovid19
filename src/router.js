@@ -19,7 +19,7 @@ export default new Router({
         },
         // Tables
         {
-          name: '地域一覧',
+          name: '地域詳細一覧',
           path: 'tables/area-tables',
           component: () => import('@/views/dashboard/tables/AreaTables'),
         },

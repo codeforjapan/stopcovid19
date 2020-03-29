@@ -120,7 +120,7 @@
           to: '/tables/area-tables',
         },
         {
-          icon: 'mdi-view-dashboard',
+          icon: 'mdi-alert-circle-outline',
           title: 'information',
           to: '/information',
         },
