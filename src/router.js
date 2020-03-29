@@ -25,9 +25,9 @@ export default new Router({
         },
         // Dashboard
         {
-          name: 'ダッシュボード',
-          path: 'dashboard',
-          component: () => import('@/views/dashboard/Dashboard'),
+          name: '当サイトについて',
+          path: 'about',
+          component: () => import('@/views/dashboard/about/About'),
         },
       ],
     },

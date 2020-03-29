@@ -8,7 +8,12 @@ export default new Vuex.Store({
     drawer: null,
   },
   mutations: {
-
+    SET_BAR_IMAGE (state, payload) {
+      state.barImage = payload
+    },
+    SET_DRAWER (state, payload) {
+      state.drawer = payload
+    },
   },
   actions: {
 
