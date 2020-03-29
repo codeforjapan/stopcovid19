@@ -10,6 +10,7 @@ module.exports = {
 
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
+    'vue/component-name-in-template-casing': 'off',
   },
   parserOptions: {
     parser: 'babel-eslint',
