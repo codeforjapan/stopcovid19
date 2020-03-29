@@ -12,6 +12,7 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 'off',
     'vue/component-name-in-template-casing': 'off',
     'vue/max-attributes-per-line': 'off',
+    'vue/html-self-closing': 'off',
   },
   parserOptions: {
     parser: 'babel-eslint',

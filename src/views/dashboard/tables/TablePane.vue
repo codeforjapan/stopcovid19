@@ -5,25 +5,20 @@
       dense
       :headers="headers"
       :items="areas"
+      :items-per-page="itemsPerPage"
       item-key="code"
       class="elevation-1"
-      :footer-props="{
-        'items-per-page-options': [10, 20, 50],
-        showFirstLastPage: true,
-      }"
       multi-sort
       locale="ja-jp"
       loading-text="読込中"
       no-data-text="データがありません。"
     >
-
       <template v-slot:item.production="{ item }">
         <a
           :href="item.production"
           target="_blank"
         >{{ item.production }}</a>
       </template>
-
     </v-data-table>
   </div>
 </template>
@@ -37,6 +32,7 @@
     name: 'TablePane',
     data: () => ({
       areas: DATA,
+      itemsPerPage: 60,
       headers: [
         { text: '状態', sortable: true, value: 'status' },
         { text: '都道府県', sortable: true, value: 'prefecture' },

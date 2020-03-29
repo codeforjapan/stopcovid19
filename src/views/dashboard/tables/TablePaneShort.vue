@@ -5,11 +5,15 @@
       dense
       :headers="headers"
       :items="areas"
+      :items-per-page="itemsPerPage"
+      :page.sync="page"
       item-key="prefecture"
       class="elevation-1"
       locale="ja-jp"
       loading-text="読込中"
       no-data-text="データがありません。"
+      hide-default-footer
+      @page-count="pageCount = $event"
     >
       <template v-slot:item.production="{ item }">
         <a
@@ -18,6 +22,16 @@
         >{{ item.production }}</a>
       </template>
     </v-data-table>
+    <div class="text-center py-2">
+      <v-pagination
+        v-model="page"
+        :length="pageCount"
+        :total-visible="totalVisible"
+        circle
+        prev-icon="mdi-menu-left"
+        next-icon="mdi-menu-right"
+      />
+    </div>
   </div>
 </template>
 
@@ -30,6 +44,10 @@
     name: 'TablePaneShort',
     data: () => ({
       areas: DATA,
+      itemsPerPage: 20,
+      page: 1,
+      pageCount: 0,
+      totalVisible: 7,
       headers: [
         { text: '都道府県', sortable: true, value: 'prefecture' },
         { text: '市区町村', sortable: true, value: 'city' },
