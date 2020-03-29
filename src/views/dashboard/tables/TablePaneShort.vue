@@ -45,9 +45,9 @@
       tableCreate: function () {
         axios.get('/data/data.json').then(function (response) {
           this.area = response.data
-          console.log(this.area)
+          // console.log(this.area)
         }.bind(this)).catch(function (e) {
-          console.error(e)
+          // console.error(e)
         })
       },
     },
