@@ -6,113 +6,52 @@
   >
     <v-row>
       <v-col cols="12">
-        {{ news_title}}
+        <base-subheading>
+          <h5 class="font-weight-light">
+            {{ news_title }}
+          </h5>
+        </base-subheading>
+        {{ update_title }}{{ update_date }}<br><br>
+        <span v-html="news_note" />
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col cols="12">
-        <div>
-          {{ map_title }}
-        </div>
-        <div id="map" />
+      <v-col cols="6">
+        <MapPane />
+      </v-col>
+      <v-col cols="6">
+        <TablePaneShort />
       </v-col>
     </v-row>
-
   </v-container>
 </template>
 
 <script>
-  // Mapbox GL JSを読み込み
-  import mapboxgl from 'mapbox-gl'
-  import MapboxLanguage from '@mapbox/mapbox-gl-language'
+  import MapPane from './MapPane.vue'
+  import TablePaneShort from '../tables/TablePaneShort.vue'
 
   export default {
     name: 'AreaMap',
+    components: {
+      MapPane,
+      TablePaneShort,
+    },
     data: function () {
       return {
-        news_title: 'お知らせ: 東京都 新型コロナウイルス感染症対策サイト の派生サイトのマップです',
-        map_title: '地域展開マップ',
+        news_title: 'StopCovid19 全国版の地域マップ',
+        update_title: '最終更新：',
+        update_date: '2020-03-29 20:30',
+        news_note: '東京都の<a href="https://github.com/tokyo-metropolitan-gov/covid19">オープンソース</a>' +
+          'を活用した新型コロナウイルス感染症対策サイトの各都道府県のサイトをまとめています。',
       }
     },
     mounted: function () {
-      // マップオブジェクト生成
-      this.mapCreate()
     },
     methods: {
-      // マップオブジェクト生成 Your Access Token
-      mapCreate: function () {
-        mapboxgl.accessToken = process.env.VUE_APP_MAPBOX_ACCESSTOKEN
-        const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v10',
-          center: [139.767, 35.681],
-          zoom: 4,
-        })
-        // コントロール関係表示
-        map.addControl(new mapboxgl.NavigationControl())
-
-        // 日本語表記
-        // mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.0/mapbox-gl-rtl-text.js')
-        map.addControl(new MapboxLanguage())
-
-        // GeoJSON Load
-        map.on('load', function () {
-          map.addSource('japan_map', {
-            type: 'geojson',
-            data: '/data/area.geojson',
-          })
-
-          map.addLayer({
-            id: 'japan_all',
-            type: 'line',
-            source: 'japan_map',
-            layout: {},
-            paint: {
-              'line-color': '#088',
-              'line-width': 1.0,
-            },
-          })
-
-          // リリース
-          map.addLayer({
-            id: 'area_map_1',
-            type: 'fill',
-            source: 'japan_map',
-            layout: {},
-            paint: {
-              'fill-outline-color': '#f00',
-              'fill-color': '#00f',
-              'fill-opacity': 0.5,
-            },
-            filter: ['==', 'status', 1],
-          })
-
-          // 開発中
-          map.addLayer({
-            id: 'area_map_2',
-            type: 'fill',
-            source: 'japan_map',
-            layout: {},
-            paint: {
-              'fill-outline-color': '#FF4F02',
-              'fill-color': '#FF4F02',
-              'fill-opacity': 0.5,
-            },
-            filter: ['==', 'status', 2],
-          })
-
-          // map.setFilter('area_map', ['==', 'pref', 1]);
-        })
-      },
     },
   }
 </script>
 
 <style scoped>
-  #map {
-    z-index: 0;
-    width: 100%;
-    height: 800px;
-  }
 </style>

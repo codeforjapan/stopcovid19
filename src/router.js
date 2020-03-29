@@ -19,15 +19,21 @@ export default new Router({
         },
         // Tables
         {
-          name: '地域一覧',
+          name: '地域詳細一覧',
           path: 'tables/area-tables',
           component: () => import('@/views/dashboard/tables/AreaTables'),
         },
-        // Dashboard
+        // information
         {
-          name: 'ダッシュボード',
-          path: 'dashboard',
-          component: () => import('@/views/dashboard/Dashboard'),
+          name: '関連情報',
+          path: 'information',
+          component: () => import('@/views/dashboard/information/Information'),
+        },
+        // About
+        {
+          name: '当サイトについて',
+          path: 'about',
+          component: () => import('@/views/dashboard/about/About'),
         },
       ],
     },

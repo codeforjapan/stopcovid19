@@ -22,8 +22,8 @@ import vuetify from './plugins/vuetify'
 import i18n from './i18n'
 import axios from 'axios'
 
-// Mapbox GL JSのCSSを読み込み
-import 'mapbox-gl/dist/mapbox-gl.css'
+// LeafletのCSSを読み込み
+import 'leaflet/dist/leaflet.css'
 
 Vue.config.productionTip = false
 Vue.config.devtools = true

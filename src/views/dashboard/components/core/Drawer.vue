@@ -26,6 +26,17 @@
       nav
     >
       <v-list-item>
+        <v-list-item-avatar
+          class="align-self-center"
+          color="white"
+          contain
+        >
+          <v-img
+            src="favicon.png"
+            max-height="30"
+          />
+        </v-list-item-avatar>
+
         <v-list-item-content>
           <v-list-item-title
             class="display-1"
@@ -109,9 +120,14 @@
           to: '/tables/area-tables',
         },
         {
+          icon: 'mdi-alert-circle-outline',
+          title: 'information',
+          to: '/information',
+        },
+        {
           icon: 'mdi-view-dashboard',
-          title: 'dashboard',
-          to: '/dashboard',
+          title: 'about',
+          to: '/about',
         },
       ],
     }),

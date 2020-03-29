@@ -3,19 +3,6 @@
     id="dashboard-core-footer"
   >
     <v-container>
-      <v-row
-        align="rigth"
-        no-gutters
-      >
-        <v-col
-          cols="12"
-          md="auto"
-        >
-          <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            Powered by ほげふが
-          </div>
-        </v-col>
-      </v-row>
     </v-container>
   </v-footer>
 </template>

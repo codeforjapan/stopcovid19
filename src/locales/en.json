@@ -1,10 +1,12 @@
 {
-  "avatar": "Informarion",
+  "avatar": "StopCovid19jp",
   "buttons": "Buttons",
   "calendar": "Calendar",
   "charts": "Charts",
   "components": "Components",
   "dashboard": "Dashboard",
   "area-maps": "Area Maps",
-  "area-tables": "Area Tables"
+  "area-tables": "Area Tables",
+  "about": "About",
+  "information": "Infomation"
 }
