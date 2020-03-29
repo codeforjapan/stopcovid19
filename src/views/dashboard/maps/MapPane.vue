@@ -79,7 +79,7 @@
         // geojson読み込み
         axios.get('/data/area.geojson').then(function (response) {
           this.area = response.data
-          console.log(this.area)
+          // console.log(this.area)
           var geojson = L.geoJson(this.area, {
             style: function (feature) {
               var status = feature.properties.status
@@ -122,7 +122,7 @@
           })
           geojson.addTo(map)
         }.bind(this)).catch(function (e) {
-          console.error(e)
+          // console.error(e)
         })
 
         /* Legend specific */
