@@ -20,6 +20,7 @@
     "core-js": "^3.6.2",
     "leaflet": "^1.6.0",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-i18n": "^8.15.3",
     "vue-mapbox": "^0.4.1",
     "vue-router": "^3.1.3",
