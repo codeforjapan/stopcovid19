@@ -112,12 +112,9 @@
               return style
             },
             onEachFeature: function (feature, layer) {
-              /*
-              var field = '名称: '+ feature.properties.name + '<br>'+
-                '<a href="'+feature.properties.url+ '" target="_blank">ホームページ</a>';
-              layer.bindPopup(field);
-              */
-              layer.bindPopup(feature.properties.name)
+              // var field = '<a href="' + feature.properties.url + '" target="_blank">' + feature.properties.name + '</a>'
+              var field = feature.properties.name
+              layer.bindPopup(field)
             },
           })
           geojson.addTo(map)

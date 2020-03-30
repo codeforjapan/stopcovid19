@@ -15,11 +15,13 @@
       hide-default-footer
       @page-count="pageCount = $event"
     >
-      <template v-slot:item.production="{ item }">
-        <a
-          :href="item.production"
-          target="_blank"
-        >{{ item.production }}</a>
+      <template v-slot:item.url="{ item }">
+        <span v-if="item.url.length">
+          <a
+            :href="item.url"
+            target="_blank"
+          >{{ item.team }}</a>
+        </span>
       </template>
     </v-data-table>
     <div class="text-center py-2">
@@ -51,7 +53,7 @@
       headers: [
         { text: '都道府県', sortable: true, value: 'prefecture' },
         { text: '市区町村', sortable: true, value: 'city' },
-        { text: 'URL', sortable: true, value: 'production' },
+        { text: 'URL', sortable: true, value: 'url' },
       ],
     }),
     mounted: function () {
