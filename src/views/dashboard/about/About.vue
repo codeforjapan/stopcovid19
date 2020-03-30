@@ -14,41 +14,6 @@
         </v-card>
       </v-col>
     </v-row>
-
-    <v-row>
-      <v-col cols="6">
-        <v-card>
-          <v-card-text>
-            <base-subheading subheading="リンク集" />
-            <ul id="link-1-1">
-              <li v-for="item in area_items" :key="item.id">
-                <a
-                  :href="item.url"
-                  target="_blank"
-                >{{ item.name }}</a>
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
-
-      <v-col cols="6">
-        <v-card>
-          <v-card-text>
-            <base-subheading subheading="東京都新型コロナウイルス対策サイト 関連サイト" />
-            <ul id="link-1-2">
-              <li v-for="item in tokyo_items" :key="item.id">
-                <a
-                  :href="item.url"
-                  target="_blank"
-                >{{ item.name }}</a>
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-
     <v-row>
       <v-col cols="12">
         <v-card>
@@ -66,22 +31,11 @@
         </v-card>
       </v-col>
     </v-row>
-
   </v-container>
 </template>
 
 <script>
   export default {
     name: 'About',
-    data: () => ({
-      area_items: [
-        { id: 1, name: 'StopCovid19全国版まとめ(HackMD)', url: 'https://hackmd.io/@homata/ryHz3P4BI' },
-        { id: 2, name: 'Googleスプレッドシートのまとめ', url: 'https://docs.google.com/spreadsheets/d/1c50h3YtbsCiHiKOh4cyJQYL-21Vow3X7b8tRoAceVMA/' },
-      ],
-      tokyo_items: [
-        { id: 1, name: '東京都新型コロナウイルス対策サイト', url: 'https://stopcovid19.metro.tokyo.lg.jp/' },
-        { id: 2, name: '東京都新型コロナウイルス対策サイト ソースコード (GitHub)', url: 'https://github.com/tokyo-metropolitan-gov/covid19' },
-      ],
-    }),
   }
 </script>

@@ -5,25 +5,30 @@
       dense
       :headers="headers"
       :items="areas"
+      :items-per-page="itemsPerPage"
       item-key="code"
       class="elevation-1"
-      :footer-props="{
-        'items-per-page-options': [10, 20, 50],
-        showFirstLastPage: true,
-      }"
       multi-sort
       locale="ja-jp"
       loading-text="読込中"
       no-data-text="データがありません。"
     >
-
-      <template v-slot:item.production="{ item }">
-        <a
-          :href="item.production"
-          target="_blank"
-        >{{ item.production }}</a>
+      <template v-slot:item.url="{ item }">
+        <span v-if="item.url.length">
+          <a
+            :href="item.url"
+            target="_blank"
+          >{{ item.url }}</a>
+        </span>
       </template>
-
+      <template v-slot:item.source="{ item }">
+        <span v-if="item.source.length">
+          <a
+            :href="item.source"
+            target="_blank"
+          >コード</a>
+        </span>
+      </template>
     </v-data-table>
   </div>
 </template>
@@ -37,12 +42,15 @@
     name: 'TablePane',
     data: () => ({
       areas: DATA,
+      itemsPerPage: 65,
       headers: [
         { text: '状態', sortable: true, value: 'status' },
+        { text: '更新日付', sortable: true, value: 'date' },
         { text: '都道府県', sortable: true, value: 'prefecture' },
         { text: '市区町村', sortable: true, value: 'city' },
         { text: '運営者', sortable: true, value: 'team' },
-        { text: 'URL', sortable: true, value: 'production' },
+        { text: 'URL', sortable: true, value: 'url' },
+        { text: 'GitHub', sortable: true, value: 'source' },
       ],
     }),
     mounted: function () {
@@ -54,9 +62,9 @@
       tableCreate: function () {
         axios.get('/data/data.json').then(function (response) {
           this.area = response.data
-          console.log(this.area)
+          // console.log(this.area)
         }.bind(this)).catch(function (e) {
-          console.error(e)
+          // console.error(e)
         })
       },
     },

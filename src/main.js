@@ -21,12 +21,19 @@ import './plugins/vee-validate'
 import vuetify from './plugins/vuetify'
 import i18n from './i18n'
 import axios from 'axios'
+import VueAnalytics from 'vue-analytics'
 
 // LeafletのCSSを読み込み
 import 'leaflet/dist/leaflet.css'
 
 Vue.config.productionTip = false
 Vue.config.devtools = true
+
+// Configuration VueAnalytics
+Vue.use(VueAnalytics, {
+  id: 'UA-162190058-1',
+  router,
+})
 
 new Vue({
   router,

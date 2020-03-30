@@ -79,7 +79,7 @@
         // geojson読み込み
         axios.get('/data/area.geojson').then(function (response) {
           this.area = response.data
-          console.log(this.area)
+          // console.log(this.area)
           var geojson = L.geoJson(this.area, {
             style: function (feature) {
               var status = feature.properties.status
@@ -112,17 +112,14 @@
               return style
             },
             onEachFeature: function (feature, layer) {
-              /*
-              var field = '名称: '+ feature.properties.name + '<br>'+
-                '<a href="'+feature.properties.url+ '" target="_blank">ホームページ</a>';
-              layer.bindPopup(field);
-              */
-              layer.bindPopup(feature.properties.name)
+              // var field = '<a href="' + feature.properties.url + '" target="_blank">' + feature.properties.name + '</a>'
+              var field = feature.properties.name
+              layer.bindPopup(field)
             },
           })
           geojson.addTo(map)
         }.bind(this)).catch(function (e) {
-          console.error(e)
+          // console.error(e)
         })
 
         /* Legend specific */
