@@ -39,6 +39,3 @@ The documentation for the **Vuetify Material Dashboard** is hosted on vuetify [w
 * [Vuetify Material Dashboard](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=vtymdp-readme)
 * Source code is under MIT license.
 * @homata (https://twitter.com/homata)
-
-)
-
