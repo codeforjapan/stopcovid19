@@ -384,10 +384,10 @@
         "opendata": "",
         "prefecture": "長野県",
         "relation": "",
-        "source": "https://github.com/hisayan/covid19/",
+        "source": "https://github.com/Stop-COVID19-Nagano/covid19",
         "status": "リリース",
         "team": "有志 (長野県版COVID-19対策サイトをつくろう)",
-        "url": "https://stop-covid19-nagano.netlify.com/"
+        "url": "https://stop-covid19-nagano.netlify.app/"
     },
     {
         "city": "",
