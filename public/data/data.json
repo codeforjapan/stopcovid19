@@ -99,10 +99,10 @@
         "opendata": "",
         "prefecture": "山形県",
         "relation": "",
-        "source": "",
-        "status": "",
-        "team": "",
-        "url": ""
+        "source": "https://github.com/onsen-yamagata/covid19-yamagata/",
+        "status": "開発中",
+        "team": "有志",
+        "url": "https://covid19-yamagata.netlify.com/"
     },
     {
         "city": "",
@@ -880,9 +880,9 @@
         "prefecture": "沖縄県",
         "relation": "非公式",
         "source": "https://github.com/Code-for-OKINAWA/covid19",
-        "status": "開発中",
+        "status": "リリース",
         "team": "Code for Okinawa",
-        "url": ""
+        "url": "https://okinawa.stopcovid19.jp/"
     },
     {
         "city": "",
