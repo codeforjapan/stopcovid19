@@ -196,6 +196,21 @@
     },
     {
         "city": "",
+        "code": 10,
+        "contact": "",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "",
+        "opendata": "",
+        "prefecture": "群馬県",
+        "relation": "",
+        "source": "",
+        "status": "リリース",
+        "team": "有志",
+        "url": "https://covid19-gunma.com/"
+    },
+    {
+        "city": "",
         "code": 11,
         "contact": "info@codefortoda.org",
         "country": "日本",
@@ -343,6 +358,21 @@
         "status": "リリース",
         "team": "Code for Takaoka",
         "url": "https://toyama-covid19.netlify.com/"
+    },
+    {
+        "city": "",
+        "code": 16,
+        "contact": "",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "",
+        "opendata": "",
+        "prefecture": "富山県",
+        "relation": "",
+        "source": "https://github.com/Terachan0117/covid19-toyama",
+        "status": "リリース",
+        "team": "有志(Terachan0117)",
+        "url": "https://stopcovid19-toyama.netlify.com/"
     },
     {
         "city": "",
@@ -631,6 +661,21 @@
     },
     {
         "city": "",
+        "code": 32,
+        "contact": "",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "",
+        "opendata": "",
+        "prefecture": "島根県",
+        "relation": "",
+        "source": "https://github.com/junkboy0315/covid19",
+        "status": "閉鎖",
+        "team": "有志（junkboy0315）",
+        "url": "https://covid19-shimane.netlify.com/"
+    },
+    {
+        "city": "",
         "code": 33,
         "contact": "Twitter: @fujiwaraizuho",
         "country": "日本",
@@ -699,10 +744,10 @@
         "opendata": "",
         "prefecture": "徳島県",
         "relation": "",
-        "source": "",
-        "status": "",
-        "team": "",
-        "url": ""
+        "source": "https://github.com/yuta-kusuno/covid19-tokushima",
+        "status": "リリース",
+        "team": "個人(ボランティア)",
+        "url": "https://covid19-tokushima.netlify.com"
     },
     {
         "city": "",
