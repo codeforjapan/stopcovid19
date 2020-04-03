@@ -17,10 +17,10 @@
     </v-row>
 
     <v-row>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6" lg="6">
         <MapPane />
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6" lg="6">
         <TablePaneShort />
       </v-col>
     </v-row>
@@ -41,7 +41,7 @@
       return {
         news_title: 'StopCovid19 全国版の地域マップ',
         update_title: '最終更新：',
-        update_date: '2020-04-02 01:00',
+        update_date: '2020-04-03 13:23',
         news_note: '東京都の<a href="https://github.com/tokyo-metropolitan-gov/covid19">オープンソース</a>' +
           'を活用した新型コロナウイルス感染症対策サイトの各都道府県のサイトをまとめています。',
       }
