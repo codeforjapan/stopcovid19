@@ -147,8 +147,7 @@
         { id: 4, name: 'シビックテックに参加する10の方法', url: 'https://note.com/kjinnouchi/n/ne6681ec83da6' },
       ],
       news_items: [
-        { id: 1, name: '新型コロナウイルス対策融資・保証まとめ最新版', url: 'https://www.startuplist.jp/alliance_posts/6' },
-        { id: 2, name: '市民主導のCOVID-19対策の取り組み総まとめ', url: 'https://kristinayasuda.com/posts/fighting-covid-19/' },
+        { id: 1, name: '市民主導のCOVID-19対策の取り組み総まとめ', url: 'https://kristinayasuda.com/posts/fighting-covid-19/' },
       ],
       data_items: [
         { id: 1, name: '新型コロナウイルス感染症対策サイトのためのデータ公開支援', url: 'https://www.code4japan.org/activity/stopcovid19' },
