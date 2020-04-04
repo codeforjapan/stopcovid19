@@ -1,9 +1,11 @@
 StopCovid19 全国版
 -------
 
+URL: https://stopcovid19.code4japan.org/
+
 東京都のオープンソースを活用した新型コロナウイルス感染症対策サイトの各都道府県のサイトをまとめています。
 
-![](public/ogp.png)
+![https://stopcovid19.code4japan.org/](public/ogp.png)
 
 ### 東京都 新型コロナウイルス感染症対策サイト
 * [東京都 新型コロナウイルス感染症対策サイト / Tokyo COVID-19 Task Force website](https://stopcovid19.metro.tokyo.lg.jp/)
@@ -39,6 +41,4 @@ The documentation for the **Vuetify Material Dashboard** is hosted on vuetify [w
 * [Vuetify Material Dashboard](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=vtymdp-readme)
 * Source code is under MIT license.
 * @homata (https://twitter.com/homata)
-
-)
-
+* @yokinist (https://github.com/yokinist)
