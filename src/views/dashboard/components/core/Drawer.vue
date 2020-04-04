@@ -24,8 +24,9 @@
     <v-list
       dense
       nav
+      flat
     >
-      <v-list-item>
+      <v-list-item href="/">
         <v-list-item-avatar
           class="align-self-center"
           color="white"
