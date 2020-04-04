@@ -26,7 +26,7 @@
           <a
             :href="item.source"
             target="_blank"
-          >コード</a>
+          >○</a>
         </span>
       </template>
     </v-data-table>
