@@ -211,6 +211,21 @@
     },
     {
         "city": "",
+        "code": 10,
+        "contact": "",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "",
+        "opendata": "",
+        "prefecture": "群馬県",
+        "relation": "群馬県公式",
+        "source": "https://github.com/bpr-gunma/covid19",
+        "status": "リリース",
+        "team": "群馬県公式",
+        "url": "http://stopcovid19.pref.gunma.jp/"
+    },
+    {
+        "city": "",
         "code": 11,
         "contact": "info@codefortoda.org",
         "country": "日本",
