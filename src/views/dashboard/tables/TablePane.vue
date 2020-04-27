@@ -6,7 +6,6 @@
       :headers="headers"
       :items="areas"
       :items-per-page="itemsPerPage"
-      item-key="code"
       class="elevation-1"
       multi-sort
       locale="ja-jp"
@@ -35,7 +34,6 @@
 
 <script>
   // Ajax通信ライブラリ
-  import axios from 'axios'
   import DATA from '../../../../public/data/data.json'
 
   export default {
@@ -53,21 +51,6 @@
         { text: 'GitHub', sortable: true, value: 'source' },
       ],
     }),
-    mounted: function () {
-      // テーブルオブジェクト生成
-      // this.tableCreate()
-    },
-    methods: {
-      // テーブルオブジェクト生成
-      tableCreate: function () {
-        axios.get('/data/data.json').then(function (response) {
-          this.area = response.data
-          // console.log(this.area)
-        }.bind(this)).catch(function (e) {
-          // console.error(e)
-        })
-      },
-    },
   }
 </script>
 

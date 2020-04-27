@@ -7,7 +7,6 @@
       :items="areas"
       :items-per-page="itemsPerPage"
       :page.sync="page"
-      item-key="prefecture"
       class="elevation-1"
       locale="ja-jp"
       loading-text="読込中"
@@ -38,8 +37,6 @@
 </template>
 
 <script>
-  // Ajax通信ライブラリ
-  import axios from 'axios'
   import DATA from '../../../../public/data/data.json'
 
   export default {
@@ -56,21 +53,6 @@
         { text: 'URL', sortable: true, value: 'url' },
       ],
     }),
-    mounted: function () {
-      // テーブルオブジェクト生成
-      // this.tableCreate()
-    },
-    methods: {
-      // テーブルオブジェクト生成
-      tableCreate: function () {
-        axios.get('/data/data.json').then(function (response) {
-          this.area = response.data
-          // console.log(this.area)
-        }.bind(this)).catch(function (e) {
-          // console.error(e)
-        })
-      },
-    },
   }
 </script>
 
