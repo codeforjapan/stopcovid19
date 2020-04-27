@@ -133,7 +133,7 @@
     name: 'About',
     data: () => ({
       update_title: '最終更新：',
-      update_date: '2020-04-03 13:08',
+      update_date: '2020-04-08 14:33',
       covid19_items: [
         { id: 1, name: 'Code for Japan Slackサイト <https://cfj.slack.com/>', url: 'https://cfj.slack.com/' },
         { id: 2, name: 'covid19 開発チャンネル：#covid19', url: 'https://app.slack.com/client/T02FMV4EB/CUX3F56LF' },
@@ -148,6 +148,7 @@
       ],
       news_items: [
         { id: 1, name: '市民主導のCOVID-19対策の取り組み総まとめ', url: 'https://kristinayasuda.com/posts/fighting-covid-19/' },
+        { id: 2, name: '新型コロナウイルス感染症に関する専門家有志の会', url: 'https://note.stopcovid19.jp/' },
       ],
       data_items: [
         { id: 1, name: '新型コロナウイルス感染症対策サイトのためのデータ公開支援', url: 'https://www.code4japan.org/activity/stopcovid19' },
