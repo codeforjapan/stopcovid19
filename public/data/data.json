@@ -495,6 +495,21 @@
         "url": "https://stopcovid19-shizuoka-dev.netlify.com/"
     },
     {
+        "city": "浜松市",
+        "code": 22,
+        "contact": "",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "記載済",
+        "opendata": "https://opendata.pref.shizuoka.jp/dataset/8138.html",
+        "prefecture": "静岡県",
+        "relation": "浜松市公式",
+        "source": "https://github.com/code-for-hamamatsu/covid19",
+        "status": "リリース",
+        "team": "有志（Code for Hamamatsu）",
+        "url": "https://stopcovid19.code4hamamatsu.org/"
+    },
+    {
         "city": "",
         "code": 23,
         "contact": "info@code4.nagoya",

@@ -1,13 +1,13 @@
-<!--
- IMPORTANT: Please use the following link to create a new issue:
+## 改善詳細 / Details of Improvement
+- xxxx(できるだけ簡潔に/as concise as possible)
 
-  https://www.creative-tim.com/new-issue/vuetify-material-dashboard
+## スクリーンショット / Screenshot
+<!-- バグであればdeveloper toolからコンソールも合わせて添付 -->
+<!-- If it's a bug, attach a screenshot of the developer tool console -->
 
-**If your issue was not created using the app above, it will be closed immediately.**
--->
+## 期待する見せ方・挙動 / Expected behavior
+- xxxx(できるだけ簡潔に/as concise as possible)
 
-<!--
-Love Creative Tim? Do you need Angular, React, Vuejs or HTML? You can visit:
-👉  https://www.creative-tim.com/bundles
-👉  https://www.creative-tim.com
--->
+## 動作環境・ブラウザ / Environment
+- macOS / Windows / Linux / iOS / Android
+- Chrome / Safari / Firefox / Edge / Internet Explorer
