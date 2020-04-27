@@ -38,7 +38,7 @@
       // マップオブジェクト生成
       mapCreate: function () {
         // OSM
-        const layerOsm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        const layerOsm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
           attribution: 'map data &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         })
         // 地理院タイル
@@ -50,7 +50,7 @@
           attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>',
         })
         // 地理院タイル(オルソ)
-        const layerGsiOrt = L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
+        const layerGsiOrt = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
           attribution: '<a href="http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html" target="_blank">国土地理院</a>',
         })
 
