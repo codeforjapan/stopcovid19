@@ -4,7 +4,6 @@
     fluid
     tag="section"
   >
-    {{ update_title }}{{ update_date }}<br><br>
     <v-row>
       <v-col cols="12" sm="12" md="6" lg="6">
         <base-material-card
@@ -132,8 +131,6 @@
   export default {
     name: 'About',
     data: () => ({
-      update_title: '最終更新：',
-      update_date: '2020-04-08 14:33',
       covid19_items: [
         { id: 1, name: 'Code for Japan Slackサイト <https://cfj.slack.com/>', url: 'https://cfj.slack.com/' },
         { id: 2, name: 'covid19 開発チャンネル：#covid19', url: 'https://app.slack.com/client/T02FMV4EB/CUX3F56LF' },
