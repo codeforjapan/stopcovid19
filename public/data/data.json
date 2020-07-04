@@ -915,6 +915,21 @@
         "url": "https://covid19-hiroshima.netlify.app/"
     },
     {
+        "city": "広島市",
+        "code": 34,
+        "contact": "stop_covid19@v6.netsci.info.hiroshima-cu.ac.jp",
+        "country": "日本",
+        "date": "",
+        "forkedSites": "",
+        "opendata": "https://www.city.hiroshima.lg.jp/site/opendata/163477.html",
+        "prefecture": "広島県",
+        "relation": "広島市公認",
+        "source": "https://github.com/inspired-fox/covid19-hirosima_city",
+        "status": "リリース",
+        "team": "学生エンジニア(有志)",
+        "url": "https://stopcovid19-hiroshima-city.hiroshima-cu.ac.jp/"
+    },
+    {
         "city": "",
         "code": 35,
         "contact": "https://www.facebook.com/stopcovid19yamaguchi/",
